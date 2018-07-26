@@ -13,6 +13,14 @@
 		C5E2B92A21083653003911A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5E2B92921083653003911A3 /* Assets.xcassets */; };
 		C5E2B92D21083653003911A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5E2B92B21083653003911A3 /* LaunchScreen.storyboard */; };
 		C5E2B93821083653003911A3 /* ios_queue_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E2B93721083653003911A3 /* ios_queue_demoTests.swift */; };
+		C5E2B9432108367D003911A3 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E2B9422108367D003911A3 /* Queue.swift */; };
+		C5E2B9472109731C003911A3 /* WebAPIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E2B9462109731C003911A3 /* WebAPIRequestProtocol.swift */; };
+		C5E2B94A2109746B003911A3 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E2B9492109746B003911A3 /* LoginRequest.swift */; };
+		C5E2B94C21099121003911A3 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E2B94B21099121003911A3 /* APIClient.swift */; };
+		C5E2B94E210993D3003911A3 /* BookingListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E2B94D210993D3003911A3 /* BookingListRequest.swift */; };
+		C5E2B95021099755003911A3 /* LoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E2B94F21099755003911A3 /* LoginAPI.swift */; };
+		C5E2B9522109976C003911A3 /* BookingListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E2B9512109976C003911A3 /* BookingListAPI.swift */; };
+		C5E2B9562109980D003911A3 /* Dictonary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E2B9552109980D003911A3 /* Dictonary+JSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,14 @@
 		C5E2B93321083653003911A3 /* ios-queue-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-queue-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5E2B93721083653003911A3 /* ios_queue_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_queue_demoTests.swift; sourceTree = "<group>"; };
 		C5E2B93921083653003911A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5E2B9422108367D003911A3 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		C5E2B9462109731C003911A3 /* WebAPIRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAPIRequestProtocol.swift; sourceTree = "<group>"; };
+		C5E2B9492109746B003911A3 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		C5E2B94B21099121003911A3 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		C5E2B94D210993D3003911A3 /* BookingListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingListRequest.swift; sourceTree = "<group>"; };
+		C5E2B94F21099755003911A3 /* LoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
+		C5E2B9512109976C003911A3 /* BookingListAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingListAPI.swift; sourceTree = "<group>"; };
+		C5E2B9552109980D003911A3 /* Dictonary+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictonary+JSON.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +93,12 @@
 		C5E2B92121083651003911A3 /* ios-queue-demo */ = {
 			isa = PBXGroup;
 			children = (
-				C5E2B92221083651003911A3 /* AppDelegate.swift */,
-				C5E2B92421083651003911A3 /* ViewController.swift */,
-				C5E2B92621083651003911A3 /* Main.storyboard */,
 				C5E2B92921083653003911A3 /* Assets.xcassets */,
-				C5E2B92B21083653003911A3 /* LaunchScreen.storyboard */,
+				C5E2B94521096D56003911A3 /* Controllers */,
+				C5E2B95721099BE6003911A3 /* Extensions */,
 				C5E2B92E21083653003911A3 /* Info.plist */,
+				C5E2B92B21083653003911A3 /* LaunchScreen.storyboard */,
+				C5E2B94421096D4D003911A3 /* Models */,
 			);
 			path = "ios-queue-demo";
 			sourceTree = "<group>";
@@ -94,6 +110,62 @@
 				C5E2B93921083653003911A3 /* Info.plist */,
 			);
 			path = "ios-queue-demoTests";
+			sourceTree = "<group>";
+		};
+		C5E2B94421096D4D003911A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C5E2B94821097360003911A3 /* API */,
+				C5E2B9422108367D003911A3 /* Queue.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C5E2B94521096D56003911A3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C5E2B92221083651003911A3 /* AppDelegate.swift */,
+				C5E2B92421083651003911A3 /* ViewController.swift */,
+				C5E2B92621083651003911A3 /* Main.storyboard */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C5E2B94821097360003911A3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C5E2B954210997A4003911A3 /* BookingList */,
+				C5E2B95321099797003911A3 /* Login */,
+				C5E2B9462109731C003911A3 /* WebAPIRequestProtocol.swift */,
+				C5E2B94B21099121003911A3 /* APIClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C5E2B95321099797003911A3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C5E2B9492109746B003911A3 /* LoginRequest.swift */,
+				C5E2B94F21099755003911A3 /* LoginAPI.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C5E2B954210997A4003911A3 /* BookingList */ = {
+			isa = PBXGroup;
+			children = (
+				C5E2B94D210993D3003911A3 /* BookingListRequest.swift */,
+				C5E2B9512109976C003911A3 /* BookingListAPI.swift */,
+			);
+			path = BookingList;
+			sourceTree = "<group>";
+		};
+		C5E2B95721099BE6003911A3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C5E2B9552109980D003911A3 /* Dictonary+JSON.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +269,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5E2B9432108367D003911A3 /* Queue.swift in Sources */,
 				C5E2B92521083651003911A3 /* ViewController.swift in Sources */,
+				C5E2B94A2109746B003911A3 /* LoginRequest.swift in Sources */,
 				C5E2B92321083651003911A3 /* AppDelegate.swift in Sources */,
+				C5E2B95021099755003911A3 /* LoginAPI.swift in Sources */,
+				C5E2B9522109976C003911A3 /* BookingListAPI.swift in Sources */,
+				C5E2B9472109731C003911A3 /* WebAPIRequestProtocol.swift in Sources */,
+				C5E2B9562109980D003911A3 /* Dictonary+JSON.swift in Sources */,
+				C5E2B94C21099121003911A3 /* APIClient.swift in Sources */,
+				C5E2B94E210993D3003911A3 /* BookingListRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
