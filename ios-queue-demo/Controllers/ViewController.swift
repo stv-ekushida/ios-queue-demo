@@ -10,6 +10,8 @@ import UIKit
 
 final class ViewController: UIViewController {
 
+    //Test
+    
     /// 未送信キュー
     let unSentQueue = Queue<WebAPIRequestProtocol>()
     
